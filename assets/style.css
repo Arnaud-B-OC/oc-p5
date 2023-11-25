@@ -1,15 +1,24 @@
-body {
-	max-width: 1920px;
-	margin: auto;
+:root { scroll-behavior: smooth; }
+h1 {
+	font-size: 26px;
 }
-* {
-	font-family: 'Inter';
-	font-style: normal;
+h2, h3 {
+	text-align: center;
+	margin-top: 1em;
+	margin-bottom: 60px;
+	font-size: 30px;
 }
-.top-header {
+p {
+	font-size: 14px;
+	line-height: 150%;
+}
+
+
+header {
+	width: 100%;
 	background-color: white;
-	position: sticky;
-	top:0;
+	position: fixed;
+	top: 0;
 	z-index: 1000;
 	display: flex;
 	justify-content: space-between;
@@ -18,25 +27,42 @@ body {
 	align-items: center;
 }
 
-.top-header .name {
-	font-size: 26px;
-}
-
-.nav ul {
+/* Nav Menu */
+nav {
 	display: flex;
 	list-style-type: none;
-	font-size: 14px;
+	font-size: 15px;
 	margin-bottom: 0;
 }
-
-.nav li {
-	padding-inline: 10px;
-}
-
-.nav a {
+nav a {
+	display: block;
+	padding: 10px;
 	text-decoration: none;
 	color: #000
 }
+nav a:hover {
+	color: #0d6efd
+}
+
+
+
+section {
+	/* min-height: 100vh; */
+}
+
+
+
+
+
+/* Original */
+
+* {
+	font-family: 'Inter';
+	font-style: normal;
+}
+
+
+
 
 .social-link img {
 	width: 20px;
@@ -44,7 +70,7 @@ body {
 
 #about {
 	display: flex;
-	background-color: #F6D2B8;
+	background-color: #E5975F; /* #E5975F ??? */
 	padding-inline: 100px;
 	padding-block: 100px;
 	position: relative;
@@ -74,29 +100,15 @@ body {
 #about-me {
 	flex: 2
 }
-.about-me__title {
-	margin-top: 1em;
-	margin-bottom: 60px;
-	font-size: 30px;
-}
+
 .about-me__introduction {
 	font-family: 'Spectral';
 	font-weight: 800;
 	font-style: italic;
 	width: 60%;
 }
-#about-me p {
-	width: 80%;
-	font-size: 14px;
-}
 
-#gallery {
-	/*	min-height: 100vh; */
-}
-.title{
-	text-align: center;
-	padding-block: 2em;
-}
+
 .gallery .nav {
 	justify-content: center;
 }
@@ -251,10 +263,6 @@ input[type="submit"] {
 	#about, #contact .container {
 		align-items: center;
 	}
-	.about-me__title {
-		margin-top: 0;
-		margin-bottom: 1em;
-	}
 	#about-me h6, #about-me p {
 		width: 100%;
 	}
@@ -276,10 +284,6 @@ input[type="submit"] {
 		top: 0;
 		left: 0;
 		z-index: -1;
-	}
-	.about-me__title{
-		text-align: center;
-		margin-top: 1em;
 	}
 	#services .container {
 		flex-direction: column;
@@ -320,15 +324,11 @@ input[type="submit"] {
 }
 
 @media all and (max-width: 650px) {
-	.top-header {
+	header {
 		flex-direction: column;
 		padding-inline: 0;
 	}
-	.top-header .nav, .top-header .nav ul {
-		width: 100%;
-		padding: 0 0 0 0;
-	}
-	.top-header .nav li {
+	header nav li {
 		flex: 1;
 		padding-block: 1em;
 		text-align: center;
