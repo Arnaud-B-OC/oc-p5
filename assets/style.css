@@ -78,6 +78,9 @@ section {
 	position: relative;
 }
 
+.picture.left {
+	aspect-ratio: 1/1;
+}
 .picture.left::before {
 	content: ' ';
 	background-color: #E5975F;
