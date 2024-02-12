@@ -81,7 +81,7 @@ section {
 	position: relative;
 }
 
-.picture.left {
+.picture.left, .picture.right {
 	aspect-ratio: 1/1;
 }
 .picture.left::before {
