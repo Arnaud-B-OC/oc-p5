@@ -19,6 +19,7 @@ Code du projet 5 développeur web : Débuggez et optimisez un site de photograph
         "@id": "https://oc.radiant-horizon.net/LocalBusiness",
         "url": "https://oc.radiant-horizon.net/",
         "telephone": "05 56 67 78 89",
+        "priceRange": "$$",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "68 avenue Alsace-Lorraine",
