@@ -212,6 +212,10 @@ section {
 	z-index: 1;
 }
 
+.service__price p {
+	font-size: calc(1.275rem + 0.3vw);
+}
+
 #contact {
 	margin: auto;
 	background-color: #D8D3A8 ;
