@@ -4,7 +4,7 @@ h1 {
 }
 h2, h3 {
 	text-align: center;
-	margin-top: 1em;
+	padding-top: 1em;
 	margin-bottom: 60px;
 	font-size: 30px;
 }
@@ -17,7 +17,7 @@ p {
 header {
 	width: 100%;
 	background-color: white;
-	position: fixed;
+	position: sticky;
 	top: 0;
 	z-index: 1000;
 	display: flex;
@@ -44,14 +44,9 @@ nav a:hover {
 	color: #0d6efd
 }
 
-
-
-section {
-	/* min-height: 100vh; */
+.carousel-item {
+	aspect-ratio: 80 / 37;
 }
-
-
-
 
 
 /* Original */
@@ -60,9 +55,6 @@ section {
 	font-family: 'Inter';
 	font-style: normal;
 }
-
-
-
 
 .social-link img {
 	width: 20px;
@@ -76,6 +68,9 @@ section {
 	position: relative;
 }
 
+.picture.left, .picture.right {
+	aspect-ratio: 1/1;
+}
 .picture.left::before {
 	content: ' ';
 	background-color: #E5975F;
@@ -108,12 +103,11 @@ section {
 	width: 60%;
 }
 
-
 .gallery .nav {
 	justify-content: center;
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-	color: #fff;
+	color: #000;
 	background-color: #BEB45A;
 	border-radius:0 ;
 }
@@ -161,7 +155,7 @@ section {
 	font-family: Spectral;
 	font-style: italic;
 	font-weight: 300;
-
+    font-size: 26px;
 }
 .quote__author {
 	font-family: Spectral;
@@ -202,6 +196,10 @@ section {
 	flex-direction: column;
 	justify-content: space-between;
 	z-index: 1;
+}
+
+.service__price p {
+	font-size: calc(1.275rem + 0.3vw);
 }
 
 #contact {
@@ -301,12 +299,7 @@ input[type="submit"] {
 	}
 
 	#services .container::before{
-		width: 30%;
-		height: 100%;
-		bottom: 0;
-		right: 0;
-		left: auto;
-		z-index: 0;
+		content: none;
 	}
 
 	#contact .container {
