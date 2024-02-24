@@ -10,8 +10,8 @@
 	<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
 	<meta charset="UTF-8">
 	<link rel="canonical" href="https://oc.radiant-horizon.net/"/>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
 	<script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="./assets/maugallery.min.js" defer></script>
 	<script src="./assets/scripts.min.js" defer></script>
 	<!-- Facebook Meta Tags -->
@@ -39,7 +39,7 @@
 		<a href="#gallery">Galerie</a>
 		<a href="#services">Service</a>
 		<a href="#contact">Contact</a>
-		<a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram.webp" alt="instagram"></a>
+		<a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram.webp" alt="instagram" width="20" height="20"></a>
 	</nav>
 </header>
 <main>
@@ -52,27 +52,39 @@
 			</div>
 			<div class="carousel-inner">
 				<div class="carousel-item active">
-					<img src="./assets/images/slider/ryoji-iwata-unsplash/ryoji-iwata-unsplash_ccftnn_c_scale,w_1400.webp"
+					<img src="./assets/images/slider/ryoji/ryoji-iwata-w_1400.webp"
 					sizes="(max-width: 1400px) 100vw, 1400px"
 					srcset="
-					./assets/images/slider/ryoji-iwata-unsplash/ryoji-iwata-unsplash_ccftnn_c_scale,w_200.webp 200w,
-					./assets/images/slider/ryoji-iwata-unsplash/ryoji-iwata-unsplash_ccftnn_c_scale,w_638.webp 638w,
-					./assets/images/slider/ryoji-iwata-unsplash/ryoji-iwata-unsplash_ccftnn_c_scale,w_850.webp 850w,
-					./assets/images/slider/ryoji-iwata-unsplash/ryoji-iwata-unsplash_ccftnn_c_scale,w_1121.webp 1121w,
-					./assets/images/slider/ryoji-iwata-unsplash/ryoji-iwata-unsplash_ccftnn_c_scale,w_1306.webp 1306w,
-					./assets/images/slider/ryoji-iwata-unsplash/ryoji-iwata-unsplash_ccftnn_c_scale,w_1400.webp 1400w"
-					class="d-block w-100" width="100%" alt="Ryoji Iwata">
+					./assets/images/slider/ryoji/ryoji-iwata-w_200.webp 200w,
+					./assets/images/slider/ryoji/ryoji-iwata-w_371.webp 371w,
+					./assets/images/slider/ryoji/ryoji-iwata-w_586.webp 586w,
+					./assets/images/slider/ryoji/ryoji-iwata-w_875.webp 875w,
+					./assets/images/slider/ryoji/ryoji-iwata-w_1025.webp 1025w,
+					./assets/images/slider/ryoji/ryoji-iwata-w_1400.webp 1400w"
+					class="d-block w-100" alt="Ryoji Iwata">
 				</div>
 				<div class="carousel-item">
-					<img src="./assets/images/slider/nicholas-green-unsplash.webp"
-					srcset="./assets/images/slider/nicholas-green-unsplash_800w.webp 800w, ./assets/images/slider/nicholas-green-unsplash.webp 2000w"
-					sizes="(max-width: 800px) 800px, 2000px"
+					<img src="./assets/images/slider/nicholas/nicholas-green-w_1400.webp"
+					sizes="(max-width: 1400px) 100vw, 1400px"
+					srcset="
+					./assets/images/slider/nicholas/nicholas-green-w_200.webp 200w,
+					./assets/images/slider/nicholas/nicholas-green-w_450.webp 450w,
+					./assets/images/slider/nicholas/nicholas-green-w_700.webp 700w,
+					./assets/images/slider/nicholas/nicholas-green-w_948.webp 948w,
+					./assets/images/slider/nicholas/nicholas-green-w_1230.webp 1230w,
+					./assets/images/slider/nicholas/nicholas-green-w_1400.webp 1400w"
 					class="d-block w-100" alt="Nicholas Green" loading="lazy">
 				</div>
 				<div class="carousel-item">
-					<img src="./assets/images/slider/edward-cisneros-unsplash.webp"
-					srcset="./assets/images/slider/edward-cisneros-unsplash_800w.webp 800w, ./assets/images/slider/edward-cisneros-unsplash.webp 2000w"
-					sizes="(max-width: 800px) 800px, 2000px"
+					<img src="./assets/images/slider/edward/edward-cisneros-w_1400.webp"
+					sizes="(max-width: 1400px) 100vw, 1400px"
+					srcset="
+					./assets/images/slider/edward/edward-cisneros-w_200.webp 200w,
+					./assets/images/slider/edward/edward-cisneros-w_488.webp 488w,
+					./assets/images/slider/edward/edward-cisneros-w_779.webp 779w,
+					./assets/images/slider/edward/edward-cisneros-w_984.webp 984w,
+					./assets/images/slider/edward/edward-cisneros-w_1048.webp 1048w,
+					./assets/images/slider/edward/edward-cisneros-w_1400.webp 1400w"
 					class="d-block w-100" alt="Edward Cisneros" loading="lazy">
 				</div>
 			</div>
@@ -186,7 +198,7 @@
 				</form>
 			</div>
 			<div class="picture right">
-				<img loading="lazy" src="./assets/images/camera.webp" alt="Camera">
+				<img src="./assets/images/camera.webp" alt="Camera" loading="lazy">
 			</div>
 		</div>	
 	</section>
