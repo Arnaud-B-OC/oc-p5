@@ -23,6 +23,7 @@ Code du projet 5 développeur web : Débuggez et optimisez un site de photograph
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "68 avenue Alsace-Lorraine",
+            "addressRegion": "Nouvelle-Aquitaine",
             "addressLocality": "Bordeaux",
             "postalCode": "33200",
             "addressCountry": "FR"
